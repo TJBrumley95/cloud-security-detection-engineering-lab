@@ -1,0 +1,7 @@
+# Description: Search query used to create alert and dashboard on CreateAccessKey event in CloudTrail
+# Search provides the user who generated the access keys, user the access keys are for,
+# the source IP address, and the date/time the event was first seen
+
+index=cloudtrail eventName=CreateAccessKey
+| stats earliest(_time) as first_seen by userIdentity.userName requestParameters.userName sourceIPAddress
+| convert ctime(first_seen)

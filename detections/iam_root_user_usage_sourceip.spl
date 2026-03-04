@@ -1,0 +1,5 @@
+# Description: Search query used to create visualization of root user activity by sourceIPAddress.
+# This visualization is to monitor spikes in root user and verify where usage comes from.
+
+index=cloudtrail userIdentity.type=Root
+| timechart count by sourceIPAddress

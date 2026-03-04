@@ -1,0 +1,7 @@
+# Description: Search query to create table that tracks the events being done by root user.
+# Tells number of times action has been detected and the most recent time of the action
+
+index=cloudtrail userIdentity.type=Root
+| stats count latest(_time) as last_seen by eventName
+| convert ctime(last_seen)
+| sort - count

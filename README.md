@@ -55,3 +55,11 @@ Validation Query:
 
 ```spl
 index=cloudtrail | stats count by eventSource
+
+---
+
+## Search Queries & Detections
+
+- `iam_access_key_creation.spl`: Used to create Alert and Dashboard item for tracking events on CreateAccessKey
+- `iam_root_user_actions_count.spl`: Used to create table to give count of all actions from root user and time of most recent occurence of event
+- `iam_root_user_usage_sourceip.spl`: Used to create area chart to show usage of root user by sourceIP to check for spikes and unknown IP addresses

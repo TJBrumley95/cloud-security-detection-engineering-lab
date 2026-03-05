@@ -1,0 +1,6 @@
+# Description: Search query that create table tracking failed console login attempts and
+# provides sourceIP and userIdentity type sorting by count.
+
+index="cloudtrail" eventName=ConsoleLogin responseElements.ConsoleLogin=Failure
+| stats count by sourceIPAddress userIdentity.type
+| sort - count

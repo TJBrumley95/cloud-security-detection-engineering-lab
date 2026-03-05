@@ -1,0 +1,7 @@
+# Description: Search query used to create visualization that tracks count of specific
+# high priveleged access events coming through from CloudTrail
+
+index=cloudtrail 
+(eventName=AttachUserPolicy OR eventName=PutUserPolicy OR eventName=AddUserToGroup OR eventName=AttachRolePolicy)
+| stats count by eventName
+| sort - count

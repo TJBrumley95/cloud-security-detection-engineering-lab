@@ -1,0 +1,6 @@
+# Description: Search query used to track and create a table for AssumeRole activity. Search will create
+# table of time, assumedRoleUser, source (IP or Service), and the assumed role.
+
+index=cloudtrail eventName=AssumeRole
+| table _time responseElements.assumedRoleUser.arn sourceIPAddress requestParameters.roleArn
+| sort - _time

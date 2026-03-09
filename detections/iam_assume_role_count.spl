@@ -1,0 +1,7 @@
+# Description: Search query to create bar chart of the count for how many times a role
+# has been assumed sorted by count.
+
+index=cloudtrail eventName=AssumeRole
+| stats count by requestParameters.roleArn
+| rename requestParameters.roleArn as "Role ARN"
+| sort - count

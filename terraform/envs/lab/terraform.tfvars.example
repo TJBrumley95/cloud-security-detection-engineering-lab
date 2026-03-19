@@ -1,0 +1,3 @@
+aws_region   = "us-east-1"
+project_name = "cloud-security-detection-engineering-lab"
+environment  = "lab"

@@ -100,28 +100,6 @@ Introduce simple automated response actions to demonstrate detection-to-response
 
 ---
 
-### Story: Build Terraform Infrastructure Foundation
-
-**Description:**  
-Establish Terraform as the primary method for managing AWS infrastructure, replacing manual configuration from Phase 1.
-
-**Acceptance Criteria:**
-- [ ] Terraform project structure is created  
-- [ ] Terraform can initialize successfully  
-- [ ] AWS provider is configured  
-- [ ] Base variables and environment structure are defined  
-
-**Subtasks:**
-- [ ] Create terraform directory structure  
-- [ ] Add versions.tf  
-- [ ] Add providers.tf  
-- [ ] Add variables.tf  
-- [ ] Add outputs.tf  
-- [ ] Add terraform.tfvars.example  
-- [ ] Create envs/lab structure  
-
----
-
 ## 🟩 Done
 
 ---
@@ -146,3 +124,27 @@ Capture all completed Phase 1 work and reorganize it into the new repository str
 - [x] Move architecture diagram  
 - [x] Create docs/phase1-overview.md  
 - [x] Create docs/phase2-plan.md  
+
+---
+
+### Story: Build Terraform Infrastructure Foundation
+
+**Description:**  
+Establish Terraform as the primary method for managing AWS infrastructure, replacing manual configuration from Phase 1.
+
+**Acceptance Criteria:**
+- [X] Terraform project structure is created  
+- [X] Terraform can initialize successfully  
+- [X] AWS provider is configured  
+- [X] Base variables and environment structure are defined  
+
+**Subtasks:**
+- [X] Create terraform directory structure  
+- [X] Add versions.tf  
+- [X] Add providers.tf  
+- [X] Add variables.tf  
+- [X] Add outputs.tf  
+- [X] Add terraform.tfvars.example  
+- [X] Create envs/lab structure  
+
+---

@@ -1,0 +1,68 @@
+# =========================
+# Terraform
+# =========================
+
+# Local state files
+*.tfstate
+*.tfstate.*
+
+# Terraform directories
+.terraform/
+
+# Crash logs
+crash.log
+
+# Sensitive variable files
+terraform.tfvars
+*.tfvars
+
+# Terraform plan files
+*.tfplan
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Lock file (optional - usually commit this, but safe to include)
+# .terraform.lock.hcl
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+
+# =========================
+# Python (for Lambda later)
+# =========================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# =========================
+# OS / Editor Files
+# =========================
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# =========================
+# Logs
+# =========================
+
+*.log
